@@ -1,0 +1,24 @@
+[submodule "Scripts"]
+	path = Scripts
+	url = https://github.com/JoachimFalk/common-Scripts.git
+	branch = master
+[submodule "BuildSystem"]
+	path = BuildSystem
+	url = https://github.com/JoachimFalk/common-BuildSystem.git
+	branch = master
+[submodule "HscdTeXRes"]
+	path = HscdTeXRes
+	url = https://github.com/JoachimFalk/papers-HscdTeXRes.git
+	branch = master
+[submodule "Support"]
+	path = Support
+	url = https://github.com/JoachimFalk/common-Support.git
+	branch = master
+[submodule "SysteMoC"]
+	path = SysteMoC
+	url = https://github.com/JoachimFalk/systemoc-SysteMoC.git
+	branch = master
+[submodule "SystemC-VPC"]
+	path = SystemC-VPC
+	url = https://github.com/JoachimFalk/systemoc-SystemC-VPC.git
+	branch = master
