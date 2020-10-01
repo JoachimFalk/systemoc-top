@@ -6,10 +6,6 @@
 	path = BuildSystem
 	url = https://github.com/JoachimFalk/common-BuildSystem.git
 	branch = master
-[submodule "HscdTeXRes"]
-	path = HscdTeXRes
-	url = https://github.com/JoachimFalk/papers-HscdTeXRes.git
-	branch = master
 [submodule "Support"]
 	path = Support
 	url = https://github.com/JoachimFalk/common-Support.git
