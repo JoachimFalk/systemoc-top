@@ -2,6 +2,7 @@
 # vim: set noet sw=2 ts=8 sts=0:
 #
 # Copyright (c)
+#   2022 FAU -- Joachim Falk <joachim.falk@fau.de>
 #   2020 FAU -- Joachim Falk <joachim.falk@fau.de>
 # 
 # This program is free software: you can redistribute it and/or modify
@@ -34,40 +35,7 @@ AC_CONFIG_MACRO_DIR([BuildSystem/m4])
 AC_CANONICAL_BUILD
 AC_CANONICAL_HOST
 
-dnl Checks for programs.
-ACJF_CHECK_CROSSTOOL(CC, gcc)
-ACJF_CHECK_CROSSTOOL(CXX, g++)
-ACJF_CHECK_CROSSTOOL(AR, ar)
-ACJF_CHECK_CROSSTOOL(RANLIB, ranlib)
-ACJF_CHECK_CROSSTOOL(NM, nm)
-AC_PROG_CXXCPP
-AC_PROG_CPP
-# Checks for programs.
-#AC_PROG_LIBTOOL
-#AC_PROG_INSTALL
-#AC_PROG_LN_S
-#AC_PROG_MAKE_SET
-
-AC_DISABLE_SHARED
-AC_PROG_LIBTOOL
-
 AM_INIT_AUTOMAKE([subdir-objects])
-
-ACJF_ARG_DEBUG([yes], [], [-DNDEBUG])
-
-AC_CONFIG_HEADER([config.h])
-
-dnl check for exe extension
-AC_EXEEXT
-
-# Checks for header files.
-# AC_FUNC_ALLOCA
-# AC_HEADER_STDC
-# AC_CHECK_HEADERS([OS.h fcntl.h limits.h mach/mach.h malloc.h stddef.h stdint.h stdlib.h string.h sys/time.h unistd.h])
-
-# Checks for typedefs, structures, and compiler characteristics.
-
-# Checks for library functions.
 
 ACJF_CONFIG_PKG([CoSupport], [[compile:Support]])
 dnl ACJF_CONFIG_PKG([LibNGAnalysis])
